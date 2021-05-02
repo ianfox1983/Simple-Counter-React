@@ -1,12 +1,13 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+import { IconClock } from "./iconClock.jsx";
+import { Fragment } from "react";
+import { TimeCounter } from "./timecounter.jsx";
 //create your first component
-export function Home() {
+export const Home = () => {
 	return (
-		
-		</div>
+		<Fragment>
+			<TimeCounter />
+			<IconClock />
+		</Fragment>
 	);
-}
+};
